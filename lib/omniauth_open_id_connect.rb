@@ -18,7 +18,7 @@ module ::OmniAuth
       option :scope, "openid"
       option :discovery, true
       option :discovery_document, nil
-      option :use_userinfo, true
+      option :use_userinfo, false
       option :error_handler, lambda { |error, message| nil } # Default no-op handler
       option :verbose_logger, lambda { |message| nil } # Default no-op handler
       option :passthrough_authorize_options, [:p]
