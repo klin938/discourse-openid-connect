@@ -196,6 +196,7 @@ module ::OmniAuth
 
       info do
         data_source = options.use_userinfo ? userinfo_response : id_token_info
+        verbose_log("Data Source\n\n#{data_source.to_yaml}")
         prune!(
           name: data_source["name"],
           email: data_source["email"],
